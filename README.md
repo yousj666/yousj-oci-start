@@ -3,6 +3,20 @@
 只用 OCI 官方 API 循环尝试创建实例，碰到「Out of host capacity」自动换可用域重试，
 抢到为止。凭据只读本机 `~/.oci/config`，不经过任何第三方服务。
 
+## 图形版（一键，推荐）
+
+```bash
+pip install -r requirements.txt
+python3 yousj_oci_start_gui.py    # Windows 也可双击「启动抢机工具.bat」
+```
+
+打开窗口后：选区域，把甲骨文控制台「API 密钥」页面给的四项
+（租户 OCID、用户 OCID、指纹、私钥）粘贴进去，点「开始抢机」即可。
+SSH 密钥自动生成在本机 ~/.oci/，目标固定为免费额度内的
+ARM 2核12G ×1 + AMD 小鸡 ×2。填写内容保存在本机，下次打开自动带出。
+
+## 命令行版
+
 ## 准备
 
 1. Python 3.10+，装依赖：`pip install oci`（或用项目内 venv）
