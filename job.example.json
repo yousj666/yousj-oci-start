@@ -1,0 +1,1 @@
+{"compartment_id":"","display_name_prefix":"yousj","image_id":"","interval_seconds":60,"max_attempts":0,"region":"ap-tokyo-1","ssh_key_file":"~/.ssh/id_ed25519.pub","subnet_id":"","targets":[{"boot_volume_gbs":100,"count":1,"memory_gbs":12,"ocpus":2,"shape":"VM.Standard.A1.Flex"},{"boot_volume_gbs":50,"count":2,"shape":"VM.Standard.E2.1.Micro"}]}
